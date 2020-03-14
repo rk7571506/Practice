@@ -1,0 +1,11 @@
+{
+	"studentId" : "SC016",
+	"studentName" : "Neeraj Garg",
+	"studentRollNo" : "A916",
+	"studentAddress": {
+		"street" : "Ram Indu Park, Mayur Pankh",
+		"city" : "Pune",
+		"state" : "Maharashtra",
+		"pincode" : "456789"
+	}
+}

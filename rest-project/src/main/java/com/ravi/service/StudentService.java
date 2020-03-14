@@ -16,6 +16,6 @@ public interface StudentService {
 	 * Method For Lookup Student By STUDENT_ID
 	 * */
 	
-	public Response getStudentByID(String StudentId);
+	public Response getStudentByID(String studentId);
 
 }

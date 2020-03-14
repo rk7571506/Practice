@@ -7,7 +7,7 @@ import com.ravi.model.Student;
 
 public class StudentManagerImpl implements StudentManager {
 
-	StudentDaoImpl studentDaoImpl;
+	StudentDaoImpl studentDaoImpl = null;
 
 	public StudentManagerImpl() {
 		studentDaoImpl = new StudentDaoImpl();
@@ -25,8 +25,44 @@ public class StudentManagerImpl implements StudentManager {
 	}
 
 	public Student getStudentByID(String studentId) {
-		// TODO Auto-generated method stub
-		return null;
+
+		Student student = studentDaoImpl.getStudentByID(studentId);
+
+		if (student == null) {
+			return null;
+		} else {
+			return student;
+		}
+	}
+
+	public Integer addStudent(Student student) {
+
+		if (student == null) {
+			return null;
+		} else {
+
+			int studentResponse = studentDaoImpl.addStudent(student);
+			if (studentResponse == 0) {
+
+				return studentResponse;
+			} else{
+				return studentResponse;
+			}
+		}
+
+	}
+
+	public int delStudent(String studentId) {
+		
+		int response = studentDaoImpl.delStudent(studentId);
+		
+		if(response==0){
+			return 0;
+		}else if(response==1){
+			return 1;
+		}else{
+			return 2;
+		}
 	}
 
 }

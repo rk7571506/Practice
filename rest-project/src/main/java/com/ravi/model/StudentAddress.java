@@ -1,5 +1,8 @@
 package com.ravi.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class StudentAddress {
 
 	private String street;

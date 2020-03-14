@@ -1,0 +1,11 @@
+<student>
+	<studentId>SC018</studentId>
+	<studentName>Puran Singh</studentName>
+	<studentRollNo>A918</studentRollNo>
+	<studentAddress>
+		<street>Ram Indu Park, Mayur Pankh</street>
+		<city>Pune</city>
+		<state>Maharashtra</state>
+		<pincode>56789</pincode>
+	</studentAddress>
+</student>
